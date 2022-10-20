@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Sign Up!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstnameInput"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_margin="10dp"
+        android:hint="enter first name"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    <EditText
+        android:id="@+id/lastnameInput"
+        android:layout_width="224dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:hint="enter last name"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameInput" />
+
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="232dp"
+        android:layout_height="57dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="enter email"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameInput" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="228dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92dp"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameInput" />
+
+    <EditText
+        android:id="@+id/passwordInput2"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:hint="re-enter password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordInput" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="119dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="116dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
